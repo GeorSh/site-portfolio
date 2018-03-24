@@ -1,0 +1,534 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'RobotoBlack';
+  src: url("../fonts/RobotoBlack/Roboto-Black-webfont.eot");
+  src: url("../fonts/RobotoBlack/Roboto-Black-webfont.ttf") format("truetype"), url("../fonts/RobotoBlack/Roboto-Black-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/RobotoLight/Roboto-Light-webfont.eot");
+  src: url("../fonts/RobotoLight/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/RobotoLight/Roboto-Light-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url("../fonts/RobotoMedium/Roboto-Medium-webfont.eot");
+  src: url("../fonts/RobotoMedium/Roboto-Medium-webfont.ttf") format("truetype"), url("../fonts/RobotoMedium/Roboto-Medium-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../fonts/RobotoRegular/Roboto-Regular-webfont.eot");
+  src: url("../fonts/RobotoRegular/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/RobotoRegular/Roboto-Regular-webfont.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.button {
+  outline: 0;
+  border: 0;
+  background-color: #5a90ba;
+  border-radius: 50px;
+  font-family: 'RobotoBlack';
+  color: #f2f2f2;
+}
+
+.button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+}
+
+.introduction {
+  background-image: url("../images/main_winter.png");
+  background-size: cover;
+  min-width: 100%;
+  height: 765px;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.introduction__name {
+  margin-bottom: 20px;
+  font-family: 'RobotoLight';
+  font-size: 1.875rem;
+  color: #111111;
+}
+
+.introduction__title {
+  font-family: 'RobotoBlack';
+  height: 80px;
+  font-size: 3rem;
+  color: #5a90ba;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.introduction__title::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 90px;
+  width: 150px;
+  height: 2px;
+  background-color: #111111;
+}
+
+.introduction__text {
+  margin: 0 auto;
+  max-width: 400px;
+  font-family: 'RobotoRegular';
+  font-size: 1.125rem;
+  color: #111111;
+  line-height: 1.5;
+}
+
+.introduction__button {
+  margin-top: 80px;
+  height: 56px;
+  width: 234px;
+  font-size: 1.125rem;
+}
+
+.control-elements {
+  display: flex;
+  align-items: center;
+}
+
+.control-elements__button {
+  height: 45px;
+  width: 180px;
+  font-size: 0.875rem;
+}
+
+.header {
+  width: 80%;
+  padding-top: 50px;
+  margin: 0 auto 80px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .menu__item:last-child {
+  display: none;
+}
+
+.header__control-elements {
+  justify-content: flex-end;
+}
+
+.header__control-elements .logo {
+  position: absolute;
+  left: 15%;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.menu__item {
+  padding: 0 20px;
+}
+
+.menu__link {
+  font-size: 0.875rem;
+  color: #111111;
+  text-align: center;
+  font-family: 'RobotoMedium';
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.menu__link:hover {
+  border-bottom: 2px solid #111111;
+}
+
+.menu__item_hamburger {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  height: 3px;
+  width: 25px;
+  background-color: #111111;
+}
+
+.menu__item_hamburger::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  height: 3px;
+  width: 25px;
+  background-color: #111111;
+}
+
+.menu__item_hamburger::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 0;
+  height: 3px;
+  width: 25px;
+  background-color: #111111;
+}
+
+.about {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  min-height: 450px;
+  padding-top: 150px;
+}
+
+.about-me {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-me__photo {
+  width: auto;
+  min-height: 393px;
+}
+
+.about-me__words {
+  background-color: white;
+  max-width: 475px;
+  min-height: 393px;
+  padding: 30px;
+}
+
+.about-me .words__title {
+  margin-bottom: 30px;
+  font-family: 'RobotoBlack';
+  font-size: 2.25rem;
+  color: #5a90ba;
+}
+
+.about-me .words__text {
+  font-family: 'RobotoLight';
+  font-size: 1rem;
+  color: #111111;
+  line-height: 1.5;
+}
+
+.about-me__social {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social__item {
+  margin: 20px 10px 0px;
+}
+
+.portfolio {
+  padding-top: 100px;
+  background-color: #f2f2f2;
+  min-height: 2000px;
+}
+
+.portfolio__title {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-family: 'RobotoMedium';
+  font-size: 1.875rem;
+  color: #111111;
+}
+
+.portfolio__items {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.portfolio__items_size-s {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio__item {
+  background-color: white;
+  display: block;
+}
+
+.portfolio__item_size-s:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio__item_size-b:hover {
+  -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio .item__img_size-s {
+  width: 100%;
+  height: 160px;
+}
+
+.portfolio .item__title_size-s {
+  margin: 10px 10px 0;
+  font-family: 'RobotoMedium';
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: #111111;
+}
+
+.portfolio .item__title_size-s::after {
+  content: '';
+  display: block;
+  margin: 10px 0;
+  height: 2px;
+  width: 90%;
+  background-color: #111111;
+}
+
+.portfolio .item__description_size-s {
+  margin: 10px 10px 20px;
+  font-family: 'RobotoLight';
+  text-transform: capitalize;
+  font-size: 0.875rem;
+  color: #111111;
+}
+
+.portfolio .item__date {
+  font-family: 'RobotoLight';
+  font-size: 0.75rem;
+  margin: 0 10px;
+  color: #111111;
+}
+
+.portfolio__item_size-s {
+  width: 200px;
+  height: 266px;
+  margin: 25px 20px;
+}
+
+.portfolio__item_size-b {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 730px;
+  height: 454px;
+  margin-bottom: 40px;
+}
+
+.portfolio__button {
+  display: block;
+  font-size: 1.125rem;
+  width: 234px;
+  height: 56px;
+  margin: 100px auto;
+}
+
+.portfolio__items_size-b {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio .item__title_size-b {
+  text-transform: uppercase;
+  font-family: 'RobotoMedium';
+  font-size: 1.125rem;
+  color: #5a90ba;
+}
+
+.portfolio .item__title_size-b::after {
+  content: 'term1-term2';
+  font-family: 'RobotoLight';
+  font-size: 0.75rem;
+  margin-left: 40%;
+  color: #111111;
+  text-align: right;
+  display: inline;
+}
+
+.portfolio .item__description_size-b {
+  font-style: italic;
+  font-family: 'RobotoRegular';
+  font-size: 1rem;
+  color: #111111;
+  margin-bottom: 140px;
+  line-height: 1.5;
+}
+
+.portfolio .item__description_size-b::before {
+  content: '';
+  display: block;
+  margin: 10px 0;
+  height: 2px;
+  width: 100%;
+  background-color: #111111;
+}
+
+.portfolio .item__img_size-b {
+  display: block;
+  margin-top: 26px;
+  width: 264px;
+  height: 208px;
+}
+
+.portfolio .item__link {
+  font-family: 'RobotoMedium';
+  font-size: 1rem;
+  color: #5a90ba;
+}
+
+.portfolio__link {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #5a90ba;
+  font-family: 'RobotoMedium';
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.portfolio__item_hidden {
+  display: none;
+}
+
+.portfolio__link:hover {
+  border-bottom: 2px solid #5a90ba;
+}
+
+.portfolio__link_hidden {
+  display: none;
+}
+
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__control-elements {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer__social {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .header__button {
+    display: none;
+  }
+  .header__menu {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .header .menu__item:last-child {
+    display: block;
+  }
+  .header__menu_adaptive {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-me__photo {
+    display: none;
+  }
+  .portfolio__item_size-b {
+    width: 100%;
+  }
+  .footer .button {
+    display: none;
+  }
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
