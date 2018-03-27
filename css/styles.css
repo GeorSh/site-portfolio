@@ -267,7 +267,7 @@ html {
 }
 
 .about-me {
-  width: 80%;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -276,13 +276,12 @@ html {
 
 .about-me__photo {
   width: auto;
-  min-height: 393px;
+  height: 393px;
 }
 
 .about-me__words {
   background-color: white;
   max-width: 475px;
-  min-height: 393px;
   padding: 30px;
 }
 
@@ -408,7 +407,7 @@ html {
   flex-direction: column;
   width: 730px;
   height: 454px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .portfolio__button {
@@ -423,6 +422,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .portfolio .item__title_size-b {
@@ -474,9 +474,10 @@ html {
 }
 
 .portfolio__link {
+  height: 50px;
+  position: relative;
   text-transform: uppercase;
   display: inline-block;
-  margin: 50px auto;
   text-align: center;
   font-size: 0.875rem;
   color: #5a90ba;
@@ -486,14 +487,6 @@ html {
 }
 
 .portfolio__item_hidden {
-  display: none;
-}
-
-.portfolio__link:hover {
-  border-bottom: 2px solid #5a90ba;
-}
-
-.portfolio__link_hidden {
   display: none;
 }
 
